@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/namminsoo/Node.js_study-for-opentutorials/issues"
   },
-  "homepage": "https://github.com/namminsoo/Node.js_study-for-opentutorials#readme"
+  "homepage": "https://github.com/namminsoo/Node.js_study-for-opentutorials#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
 }
