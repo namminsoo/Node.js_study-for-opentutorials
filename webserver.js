@@ -6,9 +6,23 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
+  res.end('Hello Worldㅋㅋ\n');
 });
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+//풀어서 씀
+/*
+var server = http.createServer(function(req, res){
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello Worldㅋㅋ\n');
+});
+
+server.listen(port, hostname, function(){
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+*/
