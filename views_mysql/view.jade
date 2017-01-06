@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meata(charset='utf-8')
+
+  body
+    h1
+      a(href='/topic') Server Side JavaScript
+
+    ul
+      each topic in topics
+        li
+          a(href='/topic/'+topic.id)= topic.title
+
+    artcle
+      if topic
+        h2= topic.title
+        = topic.description
+      else
+        h2 welcome
+        | This is server side javascript tutorial.
+    div
+      a(href='/topic/add') add
