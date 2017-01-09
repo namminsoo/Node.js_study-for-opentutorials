@@ -2,8 +2,15 @@
 var express = require('express');
 var app = express();
 var multer = require('multer');
-
+//암호화
+var md5 = require('md5');
 //npm install express-session --save
+var sha256 = require('sha256');
+
+var salt='!#$!#';
+var pwd1= md5('minsoo'+salt);//설계상 결함이 있음 쓰지마
+var pwd2 =sha256('minoo'+salt);
+
 var session = require('express-session');
 //기본적으로 메모리에 데이터 저장.
 //실제 서비스는 DB에 저장해야 됨.
