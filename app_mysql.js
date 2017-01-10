@@ -36,7 +36,7 @@ app.locals.pretty = true;
 
 //템플릿 엔진 셋팅
 app.set('view engine', 'jade');
-app.set('views', './views_mysql'); //폴더명
+app.set('views', './views/mysql'); //폴더명
 
 //정적인 코드
 app.use(express.static('public'));
